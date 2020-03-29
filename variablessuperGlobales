@@ -1,0 +1,72 @@
+Vous avez probablement remarqué que les arrays  $_GET  et  $_POST  sont des variables un peu particulières :
+leur nom est écrit en majuscules et commence par un underscore (le trait de soulignement), mais surtout ces
+variables sont générées automatiquement par PHP. Ce sont ce qu'on appelle des variables superglobales.
+
+Il existe d'autres types de variables superglobales que nous allons découvrir dans ce chapitre.
+Parmi elles, certaines permettent de stocker des informations pendant la durée d'une visite,
+c'est le principe des sessions, mais aussi de stocker des informations sur l'ordinateur
+de vos visiteurs pendant plusieurs mois, c'est le principe des cookies.
+Les variables superglobales
+
+Les variables superglobales sont des variables un peu particulières pour trois raisons :
+
+    elles sont écrites en majuscules et commencent toutes, à une exception près,
+    par un underscore (_).$_GETet$_POSTen sont des exemples que vous connaissez ;
+
+    les superglobales sont des array car elles contiennent généralement de nombreuses informations ;
+
+    enfin, ces variables sont automatiquement créées par PHP à chaque fois qu'une page est chargée.
+    Elles existent donc sur toutes les pages et sont accessibles partout : au milieu de votre code,
+    au début, dans les fonctions, etc.
+
+Pour afficher le contenu d'une superglobale et voir ce qu'elle contient, le plus simple est d'utiliser
+la fonction print_r, puisqu'il s'agit d'un array. Exemple :
+
+<pre>
+
+<?php
+
+print_r($_GET);
+
+?>
+
+</pre>
+
+Je vous propose de passer en revue les principales variables superglobales existantes.
+ Nous ne les utiliserons pas toutes, mais nous aurons fait un petit tour d'horizon pour
+ pouvoir nous concentrer ensuite sur les plus utiles d'entre elles.
+
+    $_SERVER : ce sont des valeurs renvoyées par le serveur. Elles sont nombreuses et
+    quelques-unes d'entre elles peuvent nous être d'une grande utilité.
+    Je vous propose de retenir au moins$_SERVER['REMOTE_ADDR'].
+    Elle nous donne l'adresse IP du client qui a demandé à voir la page,
+    ce qui peut être utile pour l'identifier.
+
+    $_ENV : ce sont des variables d'environnement toujours données par le serveur.
+    C'est le plus souvent sous des serveurs Linux que l'on retrouve des informations dans cette superglobale.
+    Généralement, on ne trouvera rien de bien utile là-dedans pour notre site web.
+
+    $_SESSION : on y retrouve les variables de session. Ce sont des variables qui restent stockées sur le serveur
+    le temps de la présence d'un visiteur. Nous allons apprendre à nous en servir dans ce chapitre.
+
+    $_COOKIE : contient les valeurs des cookies enregistrés sur l'ordinateur du visiteur. Cela nous permet de
+    stocker des informations sur l'ordinateur du visiteur pendant plusieurs mois, pour se souvenir de son nom
+    par exemple.
+
+    $_GET : vous la connaissez, elle contient les données envoyées en paramètres dans l'URL.
+
+    $_POST : de même, c'est une variable que vous connaissez et qui contient les informations qui viennent
+    d'être envoyées par un formulaire.
+
+    $_FILES : elle contient la liste des fichiers qui ont été envoyés via le formulaire précédent.
+
+   Vous connaissez déjà une bonne partie de ces variables superglobales, comme vous pouvez le constater.
+  Je vous propose d'étudier plus en détail les sessions et les cookies. Avec ça nous aurons fait le tour
+  des principaux moyens de transmettre des variables de page en page !
+  En résumé
+
+    Les variables superglobales sont des variables automatiquement créées par PHP. Elles se présentent sous
+    la forme d'arrays contenant différents types d'informations.
+
+    Dans les chapitres précédents, nous avons découvert deux superglobales essentielles :
+    $_GET(qui contient les données issues de l'URL) et$_POST(qui contient les données issues d'un formulaire).

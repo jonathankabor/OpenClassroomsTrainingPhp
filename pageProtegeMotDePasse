@@ -1,0 +1,19 @@
+TP : page protégée par mot de passe
+
+Bienvenue dans votre premier TP !
+Ce qui suit n'est pas un chapitre comme les autres, vous n'allez rien apprendre de nouveau.
+Mais pour la première fois, vous allez pratiquer pour de bon et réaliser votre premier script PHP !
+
+Le but de chacun des TP est de vous montrer à quoi peut servir tout ce que vous venez d'apprendre.
+Quand vous lisez un chapitre, vous êtes parfois dans le flou, vous vous dites :
+« Ok, j'ai compris ce que tu veux me dire, mais je ne vois vraiment pas où tu veux en venir :
+comment je peux faire un site web avec tout ça ? ». Maintenant, place au concret !
+
+Et − bonne surprise − vous avez déjà le niveau pour protéger le contenu d'une page par mot de passe !
+C'est ce que je vais vous apprendre à faire dans ce chapitre.
+
+Comme c'est votre premier TP, il est probable que vous vous plantiez lamentablement (vous voyez,
+je ne vous cache rien). Vous aurez envie de vous pendre ou de vous jeter par la fenêtre, c'est tout à fait normal.
+Je connais peu de monde qui peut se vanter d'avoir réussi du premier coup son premier script PHP.
+Ne vous découragez donc pas, essayez de suivre et de comprendre le fonctionnement de ce TP,
+et ça ira déjà mieux au prochain. :-)
